@@ -13,8 +13,10 @@ livox_ros_driver is a new ROS package, specially used to connect LiDAR products 
 1. The ethernet connection needs to be configured to manual IP with address 192.168.1.xxx (I used 192.168.1.101) and Netmask 255.255.255.0.
 ![IP Setting](images/ipsettings.png)
 2. The installation steps don't mention that PCL-ROS needs to be installed before building the package. The commands are as follows (If using a different ROS1 distribution than noetic, change that part):
-```sudo apt install ros-noetic-pcl-ros
-sudo apt install pcl-tools```
+```
+sudo apt install ros-noetic-pcl-ros
+sudo apt install pcl-tools
+```
 4. Apart from that, just follow the simple installation steps below, source as usual and run the desired launchfile.
 
 ## 0. Version and Release History
