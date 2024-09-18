@@ -10,8 +10,10 @@ livox_ros_driver is a new ROS package, specially used to connect LiDAR products 
 
 # Necessary setup (added by Magnus Norén)
 
-The ethernet connection needs to be configured to manual IP with address 192.168.1.xxx (I used 192.168.1.101) and Netmask 255.255.255.0.
-Apart from that, just follow the simple installation steps below, source as usual and run the desired launchfile.
+1. The ethernet connection needs to be configured to manual IP with address 192.168.1.xxx (I used 192.168.1.101) and Netmask 255.255.255.0.
+![IP Setting](images/Screenshot from 2024-09-18 16-19-02.png)
+2. The installation steps don't mention that PCL
+3. Apart from that, just follow the simple installation steps below, source as usual and run the desired launchfile.
 
 ## 0. Version and Release History
 
