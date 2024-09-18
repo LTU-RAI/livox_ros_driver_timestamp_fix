@@ -2,6 +2,17 @@
 
 livox_ros_driver is a new ROS package, specially used to connect LiDAR products produced by Livox. The driver can be run under ubuntu 14.04/16.04/18.04 operating system with ROS environment (indigo, kinetic, melodic) installed. Tested hardware platforms that can run livox_ros_driver include: Intel x86 cpu platforms, and some ARM64 hardware platforms (such as nvida TX2 / Xavier, etc.).
 
+# Changes to the repo made by Magnus Norén
+
+1. Modified the source code to use ros time for the timestamp.
+2. Edited the config file livox_lidar_config.json to use the broadcast code of our Livox. The broadcast code for Livox Avia should end with a 1. Also set "enable_connect" to true and "imu_rate" to 1. I don't think any of these changes are strictly necessary. There is a copy of the original config file.
+3. Edited livox_lidar.launch to change the default value of "xfer_format" to 2, which sets the format of the pointcloud being published: Standard pointcloud2 (pcl :: PointXYZI) pointcloud format in the PCL library
+
+# Necessary setup (added by Magnus Norén)
+
+The ethernet connection needs to be configured to manual IP with address 192.168.1.xxx (I used 192.168.1.101) and Netmask 255.255.255.0.
+Apart from that, just follow the simple installation steps below, source as usual and run the desired launchfile.
+
 ## 0. Version and Release History
 
 ### 0.1 Current Version
